@@ -1,0 +1,594 @@
+ <html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Samitexcomplexnig.com</title>
+<style>
+   *{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+text-decoration: none;
+}
+
+header{
+ border: 1px solid whitesmoke;
+ box-shadow: 1px 1px 2px;
+ padding: 3vw;
+ display: flex;
+ 
+}
+header img{
+ width: 15vw;
+ height: 15vw;
+}
+header h1{
+text-transform: uppercase;
+margin-left: 20vw;
+font-size: 5vw;
+color: green;
+text-shadow: 2px 2px 4px white;
+
+}
+nav{
+border: 1px solid;
+display: flex;
+justify-content: space-between;
+padding: 5vw;
+text-transform: uppercase;
+font-size: 3vw;
+}
+
+.hamburger{
+outline: 1px solid;
+border-radius: 5px;
+width: fit-content;
+height: fit-content;
+background: darkgray;
+display: flex;
+flex-direction: column;
+padding: 1vw;
+position: relative;
+display: none;
+}
+.hamburger span{
+border: 4px solid white;
+width: 8vw;
+height: 2px;
+background: black;
+padding: 1vw;
+gap: 5px;
+}
+.menu{
+outline: 1px solid;
+position: absolute;
+width: 80vw;
+height: auto;
+background: lightgreen;
+padding: 3vw;
+text-transform: uppercase;
+font-size: 5vw;
+margin-left: -18px;
+display: none;
+
+
+}
+.menu a{
+ display: block;
+ color: white;
+ padding: 5vw;
+ margin-left: 40px;
+}
+.hamburger:hover .menu{
+display: block;
+}
+.welcome{
+border: 1px solid;
+border-radius: 90px 90px 90px 90px;
+background: lightgreen;
+padding: 10vw;
+}
+.welcome h4{
+color: white;
+}
+.welcome h1{
+ text-transform: uppercase;
+text-shadow: 2px 2px 3px red;
+font-size: 5vw;
+}
+.welcome p{
+font-size: 5vw;
+padding: 4vw;
+}
+
+h2{
+text-transform: uppercase;
+font-size: 4vw;
+margin-top: 6vw;
+border: 2px solid;
+padding: 4vw;
+background: black;
+color: white;
+width: 100%;
+letter-spacing: 5px;
+
+}
+.section{
+border: 1px solid;
+box-shadow: 1px 1px 2px;
+padding: 3vw;
+
+}
+.section img{
+ width: 100%;
+ 
+}
+.sub-section1{
+border: 1px solid;
+box-shadow: 1px 1px 2px;
+width: 40%;
+height: 40%;
+margin: 10vw 0vw 0vw 20vw;
+
+}
+.sub-section1 img{
+width: 100%;
+height: 100%;
+}
+.section h1,h4{
+text-transform: uppercase;
+font-size: 3vw;
+margin: 3vw;
+}
+
+.section p{
+ font-size: 4vw;
+ padding: 3vw;
+
+
+}
+.sub-section2{
+outline: 1px solid;
+width: 100%;
+font-size: 4vw;
+text-transform: uppercase;
+background: black;
+padding: 4vw;
+color: white;
+
+
+}
+h4{
+font-size: 4vw;
+text-transform: uppercase;
+margin-top: 5vw;
+
+
+}
+.section2{
+ border: 2px solid;
+ box-shadow: 1px 1px 2px;
+ padding: 3vw;
+ font-size: 4vw;
+ text-align: left;
+ margin-top: 4vw;
+ display: flex;
+ justify-content: space-between;
+}
+.sub-section2a{
+width: 30%;
+height: 30%;
+}
+.sub-section2b{
+width: 70%;
+height: auto;
+padding-left: 3vw;
+font-size: 4vw;
+text-transform: capitalize;
+}
+.sub-section2b h5{
+text-transform: uppercase;
+margin: 2vw;
+}
+.section3{
+ border: 2px solid;
+ box-shadow: 1px 1px 2px;
+ padding: 3vw;
+ font-size: 4vw;
+ display: flex;
+ justify-content: space-between;
+}
+.sub-section3a{
+width: 30%;
+height: 60%;
+}
+.sub-section3a img{
+ width: 100%;
+ height: 100%;
+}
+.sub-section3b{
+width: 60%;
+height: auto;
+font-size: 4vw;
+padding: 3vw;
+}
+
+.section4{
+ border: 2px solid;
+ box-shadow: 1px 1px 2px;
+ padding: 3vw;
+ font-size: 4vw;
+ text-align: left;
+ margin-top: 4vw;
+ display: flex;
+ justify-content: space-between;
+}
+.sub-section4a{
+width: 30%;
+height: 60%;
+}
+.sub-section4a img{
+width: 32vw;
+height: 32vw;
+}
+.sub-section4b{
+width: 65%;
+height: auto;
+}
+.section5{
+border: 1px solid;
+display: flex;
+flex-direction: column;
+padding: 4vw;
+}
+.atm{
+border: 1px solid;
+display: flex;
+padding: 4vw;
+}
+.sub-atm{
+ border: 2px solid;
+ width: 40%;
+ height: auto;
+}
+.atm img{
+width: 100%;
+height: 100%;
+}
+.sub-atm2{
+border: 1px solid;
+width: 60%;
+height: auto;
+font-size: 4vw;
+margin-left: 10px;
+}
+.sub-atm2 p{
+padding: 3vw;
+}
+
+.section5a{
+border: 1px solid;
+width: 100%;
+height: 100%;
+}
+.section5a img{
+width: 100%;
+height: 100%;
+}
+.section5b{
+ border: 1px solid;
+width: 100%;
+height: 100%;
+}
+.section5b img{
+ width: 100%;
+ height: 100%;
+}
+.section5 i{
+text-transform: capitalize;
+color: red;
+font-size: 4vw;
+text-shadow: 1px 1px 2px black;
+margin: 30px 0px 20px 0px;
+}
+.section5a ~ i{
+margin-top: 30vw;
+}
+
+footer{
+ border: 1px solid;
+ box-shadow: 1px 1px 2px;
+ padding: 3vw;
+ font-size: 4vw;
+ margin-top: 6vw;
+ 
+}
+footer p{
+margin: 3vw;
+}
+.sect{
+text-transform: uppercase;
+text-shadow: 1px 1px 2px red;
+font-size: 4vw;
+}
+i{
+ font-family: cursive;
+ font-size: 4vw;
+}
+
+@media screen and (max-width:500px) {
+ header img{
+margin-top: 5px;
+width: 10vw;
+height: 10vw;
+ }
+nav{
+border: 1px solid;
+
+}
+nav a{
+display: none;
+}
+.hamburger{
+display: block;
+
+}
+.hamburger span{
+width: 10vw;
+height: 2vw;
+display: block}
+
+.welcome h4{
+color: white;
+}
+.welcome h1{
+ text-transform: uppercase;
+text-shadow: 2px 2px 3px red;
+font-size: 4vw;
+}
+.welcome p{
+font-size: 4vw;
+padding: 3vw;
+}
+
+.section2{
+ padding: 3vw;
+ font-size: 4vw;
+ text-align: left;
+ display: flex;
+ flex-direction: column;
+
+}
+.sub-section2a{
+width: 100%;
+height: auto;
+
+}
+.sub-section2a img{
+width: 100%;
+height: 100%;
+}
+.sub-section2b{
+width: 100%;
+height: auto;
+}
+.sub-section2b h5{
+text-transform: uppercase;
+margin: 2vw;
+  
+}
+.section3{
+ border: 2px solid whitesmoke;
+ box-shadow: 1px 1px 2px;
+ padding: 3vw;
+ font-size: 4vw;
+ display: flex;
+ flex-direction: column;
+}
+.sub-section3a{
+width: 100%;
+height: auto;
+}
+.sub-section3a img{
+ width: 100%;
+ height: 100%;
+}
+.sub-section3b{
+width: 100%;
+height: auto;
+font-size: 4vw;
+padding: 3vw;
+}
+.section4{
+ display: flex;
+flex-direction: column;
+}
+.sub-section4a{
+width: 100%;
+height: auto;
+}
+.sub-section4a img{
+width: 100%;
+height: 100%;
+}
+.sub-section4b{
+width: 100%;
+height: auto;
+margin-top: 8vw;
+}
+.atm{
+border: 1px solid;
+display: flex;
+flex-direction: column;
+padding: 4vw;
+}
+.sub-atm{
+ border: 2px solid;
+ width: 100%;
+ height: auto;
+}
+.atm img{
+width: 100%;
+height: 100%;
+}
+.sub-atm2{
+width: 100%;
+height: auto;
+font-size: 4vw;
+margin-left: 10px;
+}
+.sub-atm2 p{
+padding: 4vw;
+}
+.section5{
+border: 1px solid;
+display: flex;
+flex-direction: column;
+padding: 4vw;
+}
+
+
+    
+</style>
+</head>
+
+<body>
+<header>
+<img src=" /IMAGES/human/Samitext/1716219571730.jpg" alt=" ">
+<h1>Samitexcomplexnig</h1>
+</header>
+
+<nav>
+<div class="hamburger">
+<span></span>
+<span></span>
+<span></span>
+<div class="menu">
+<a href="">home</a> 
+<a href="">menu</a>
+<a href="">contact</a>
+<a href="">about</a>
+<a href="">sign in</a>
+<a href="">sign up</a>
+</div>
+</div>
+
+<a href="">home</a>
+<a href="">menu</a>
+<a href="">contact</a>
+<a href="">about</a>
+<a href="">sign in</a>
+<a href="">sign up</a>
+</nav>
+<div class="welcome">
+<h4>welcome to</h4>
+<h1>samitexcomplexnig</h1>
+<p>where you can get your recharge cards both whole sales and retails,data subscription, POS services and daily saving and even ATM debit cards is also available here .<strong> Scroll down to see more. </strong></p>
+</div>
+
+<h2>about,samitexcomplexnig.</h2>
+<div class="section">
+<img src=" /IMAGES/human/Samitext/1716219742178.jpg" alt=" ">
+<h1> deacon Samuel edet(ceo)</h1>
+<div class="sub-section1">
+<img src="/IMAGES/human/Samitext/1716506370975.jpg " alt=" ">
+ </div>
+ <h4>certified company</h4>
+
+<p>Samitex Complex Nig located at Ubotuong Enwang, Mbo of Akwa-Ibom state was incoperated   on 30th August, 2021, It is a sole proprietorship business owned by Deacon Samuel Etim Edet who is the Chief Executive Officer (CEO). He is the native of Ubotuong Enwang
+Born on 5th of May 1995. He's a certified accountant by profession.</p>
+<p>We offer recharge Card of all network e.g MTN, AIRTEL & GLO ranging from #100 to #1,000.
+Both wholesale and retail</p>
+
+<p>We offer agent banking services such as; Withdrawal, Transfer, Bill payment, Account opening CAC registration and others online services.</p>
+
+<h4>mission statement</h4>
+<p>our mission statement of company shall be, to be steafast in supplying quality products and rendering good services. We are actively involved in helping our telecom partner to offer the best services to the millions of subscribers spread across Nigeria. Our recharge card distribution point within Mbo Local Government will be wide enough to cover all the areas, particularly with the help of our  existing distribution channel. Our maps out plan is gears at giving our vendors a better profit margin this Will Make our products the most prefered.</p>
+  
+</div>
+<div class="sub-section2">
+<h3>dealer on the following;</h3>
+</div>
+ <h4>pos and others online services</h4>
+<div class="section2">
+ <div class="sub-section2a">
+ <img src="/IMAGES/human/Samitext/download-3.jpg" alt=""> 
+ </div>
+ <div class="sub-section2b">
+ <h5>we offer agent banking services such as;</h5>
+ <ul>
+ <li>deposit of money</li>
+ <li>withdraw of money</li>
+ <li>transfer</li>
+ <li>account opening</li>
+ <li>bill payment</li>
+ <li>cac registration</li>
+ <li>nin registration and others services.</li>
+ </ul>
+ </div>
+</div>
+
+<h4>recharge cards of all network</h4>
+<div class="section3">
+<div class="sub-section3a">
+<img src=" /IMAGES/human/Samitext/images.png" alt=" ">  
+</div>
+<div class="sub-section3b">
+<p>We offer recharge Card of all network e.g MTN, AIRTEL & GLO ranging from #100 to #1,000.
+Both <strong>wholesales</strong> and <strong>retails</strong>. We also sells data at the cheapest price.</p>
+</div>
+</div>
+
+
+<h4>daily saving</h4>
+<div class="section4">
+<div class="sub-section4a">
+<img src="/IMAGES/human/Samitext/download-4.jpg " alt=" ">  
+</div>
+<div class="sub-section4b">
+<p>We also involved in financial literacy , educating customers on financial inclusion by encouraging them to save thier hard earned money on daily basis for raining days. Don't miss out on easy saving.</p>
+</div>
+</div>
+
+<div class="atm">
+<div class="sub-atm">
+<img src=" /IMAGES/human/Samitext/images-5.jpg" alt=" "> 
+</div> 
+<div class="sub-atm2">
+<p>Collects your opay debit cards today. Debit card help you to withdraw your money even when you lost your phone as Opay bank does not have office yet in our areas.</p>  
+</div>
+</div>
+  
+</div>
+
+<div class="section5">
+ <h4> business place</h4>
+ <i>exterior side</i>
+<div class="section5a">
+ <img src="/IMAGES/human/Samitext/1716307826988.jpg " alt=" ">
+</div>
+<i>interior side</i>
+<div class="section5b">
+<img src="/IMAGES/human/Samitext/1716307817019.jpg " alt=" ">
+</div>
+</div>
+<footer>
+  <h4>contacts</h4>
+ <div class="footer">
+<h6>address:</h6>
+ <p> Ubotuong, Enwang, along Ibaka Road, Mbo local government area of Akwa-Ibom state</p>
+ </div>
+ 
+<h6>phone:</h6>
+<p> <span>CEO contact:</span> <strong>+2348142940199</strong></p>
+<p><span>Manager number:</span> <strong>+2348147579418</strong></p>
+<p> <span>Office number:</span> <strong>+2348061704353</strong></p>
+<p> <span>Email:</span> samitexcomplexnigscn@gmail.com</p>
+<p class="sect">Motto: <i>Honesty, confidentiality and satisfaction.</i></p>
+</footer>
+</body>
+
+</html
